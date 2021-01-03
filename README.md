@@ -7,22 +7,22 @@ https://developers.meethue.com/develop/hue-api/5-sensors-api/
 
 ```
 {
-	"16": {
+	"19": {
 		"state": {
 			"flag": false,
-			"lastupdated": "2021-01-03T03:29:32"
+			"lastupdated": "none"
 		},
 		"config": {
 			"on": true,
 			"reachable": true
 		},
-		"name": "Sunrise Custom Alarm",
+		"name": "Joe Custom Alarm",
 		"type": "CLIPGenericFlag",
-		"modelid": "PHA_CTRL_START",
-		"manufacturername": "Philips",
+		"modelid": "JoeCustomFlag",
+		"manufacturername": "homebridge-hue-joe",
 		"swversion": "1.0",
-		"uniqueid": "uO7pMuNmt9UG",
-		"recycle": true
+		"uniqueid": "ede07661-476a-42c1-8241-de4e556c8808",
+		"recycle": false
 	}
 }
 ```
@@ -35,9 +35,9 @@ Record:
 
 ```
 {
-	"1": {
-		"name": "Sunrise Custom Alarm",
-		"description": "My programmed sunrise alarm",
+	"3": {
+		"name": "Custom Scheduled Sunrise Alarm",
+		"description": "Custom Sunrise Alarm",
 		"command": {
 			"address": "/api/{username}/sensors/{id}/state",
 			"body": {
@@ -47,9 +47,9 @@ Record:
 		},
 		"localtime": "W124/T06:20:00",
 		"time": "W124/T14:20:00",
-		"created": "2021-01-02T18:10:12",
+		"created": "2021-01-03T18:13:10",
 		"status": "enabled",
-		"recycle": true
+		"recycle": false
 	}
 }
 ```
