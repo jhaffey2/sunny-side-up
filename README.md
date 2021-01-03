@@ -432,7 +432,7 @@ https://developers.meethue.com/develop/hue-api/6-rules-api/
 				}
 			},
 			{
-				"address": "/sensors/16/state",
+				"address": "/sensors/{id}/state",
 				"method": "PUT",
 				"body": {
 					"flag": false
