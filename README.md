@@ -1,6 +1,10 @@
 # sunny-side-up
 Custom Sunrise Alarm with Phillips Hue Bridge &amp; Lights
 
+## API Portal
+
+https://{IP-Address-Of-Bridge}/debug/clip.html
+
 ## Sensors
 
 https://developers.meethue.com/develop/hue-api/5-sensors-api/
