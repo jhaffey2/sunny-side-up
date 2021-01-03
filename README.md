@@ -56,6 +56,8 @@ Record:
 
 ## Scenes
 
+https://developers.meethue.com/develop/hue-api/4-scenes/
+
 ```
 {
 	"fkzrMYtIoU78-xY": {
@@ -231,6 +233,212 @@ Record:
 				"transitiontime": 4200
 			}
 		}
+	}
+}
+```
+
+## Rules
+
+https://developers.meethue.com/develop/hue-api/6-rules-api/
+
+```
+{
+	"2": {
+		"name": "Sunrise1-1.start",
+		"owner": {username},
+		"created": "2021-01-03T17:39:46",
+		"lasttriggered": "none",
+		"timestriggered": 0,
+		"status": "enabled",
+		"recycle": false,
+		"conditions": [{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "eq",
+				"value": "true"
+			},
+			{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "ddx",
+				"value": "PT00:00:01"
+			}
+		],
+		"actions": [{
+			"address": "/groups/{id}/action",
+			"method": "PUT",
+			"body": {
+				"scene": "fkzrMYtIoU78-xY"
+			}
+		}]
+	},
+	"1": {
+		"name": "Sunrise1-2.start",
+		"owner": {username},
+		"created": "2021-01-03T17:46:22",
+		"lasttriggered": "none",
+		"timestriggered": 0,
+		"status": "enabled",
+		"recycle": false,
+		"conditions": [{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "eq",
+				"value": "true"
+			},
+			{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "ddx",
+				"value": "PT00:01:00"
+			}
+		],
+		"actions": [{
+			"address": "/groups/{id}/action",
+			"method": "PUT",
+			"body": {
+				"scene": "cdhg9MqLFNe8xCJ"
+			}
+		}]
+	},
+	"4": {
+		"name": "Sunrise1-3.start",
+		"owner": {username},
+		"created": "2021-01-03T17:46:44",
+		"lasttriggered": "none",
+		"timestriggered": 0,
+		"status": "enabled",
+		"recycle": false,
+		"conditions": [{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "eq",
+				"value": "true"
+			},
+			{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "ddx",
+				"value": "PT00:02:00"
+			}
+		],
+		"actions": [{
+			"address": "/groups/{id}/action",
+			"method": "PUT",
+			"body": {
+				"scene": "AJ1ajjOer5ZwYLF"
+			}
+		}]
+	},
+	"5": {
+		"name": "Sunrise1-4.start",
+		"owner": {username},
+		"created": "2021-01-03T17:47:54",
+		"lasttriggered": "none",
+		"timestriggered": 0,
+		"status": "enabled",
+		"recycle": false,
+		"conditions": [{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "eq",
+				"value": "true"
+			},
+			{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "ddx",
+				"value": "PT00:03:00"
+			}
+		],
+		"actions": [{
+			"address": "/groups/{id}/action",
+			"method": "PUT",
+			"body": {
+				"scene": "7w1TZjLwVCQmF-Y"
+			}
+		}]
+	},
+	"6": {
+		"name": "Sunrise1-5.start",
+		"owner": {username},
+		"created": "2021-01-03T17:48:19",
+		"lasttriggered": "none",
+		"timestriggered": 0,
+		"status": "enabled",
+		"recycle": false,
+		"conditions": [{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "eq",
+				"value": "true"
+			},
+			{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "ddx",
+				"value": "PT00:04:00"
+			}
+		],
+		"actions": [{
+			"address": "/groups/{id}/action",
+			"method": "PUT",
+			"body": {
+				"scene": "zGaOCIPSyVmKZjW"
+			}
+		}]
+	},
+	"7": {
+		"name": "Sunrise1-6.start",
+		"owner": {username},
+		"created": "2021-01-03T17:48:49",
+		"lasttriggered": "none",
+		"timestriggered": 0,
+		"status": "enabled",
+		"recycle": false,
+		"conditions": [{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "eq",
+				"value": "true"
+			},
+			{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "ddx",
+				"value": "PT00:05:00"
+			}
+		],
+		"actions": [{
+			"address": "/groups/{id}/action",
+			"method": "PUT",
+			"body": {
+				"scene": "ytPVLceTwljNqNC"
+			}
+		}]
+	},
+	"8": {
+		"name": "Sunrise1-7.start",
+		"owner": {username},
+		"created": "2021-01-03T17:49:55",
+		"lasttriggered": "none",
+		"timestriggered": 0,
+		"status": "enabled",
+		"recycle": false,
+		"conditions": [{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "eq",
+				"value": "true"
+			},
+			{
+				"address": "/sensors/{id}/state/flag",
+				"operator": "ddx",
+				"value": "PT00:06:00"
+			}
+		],
+		"actions": [{
+				"address": "/groups/{id}/action",
+				"method": "PUT",
+				"body": {
+					"scene": "czcRgwIqKY0nhSa"
+				}
+			},
+			{
+				"address": "/sensors/16/state",
+				"method": "PUT",
+				"body": {
+					"flag": false
+				}
+			}
+		]
 	}
 }
 ```
