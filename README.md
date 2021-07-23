@@ -35,7 +35,7 @@ https://developers.meethue.com/develop/hue-api/5-sensors-api/
 
 https://developers.meethue.com/develop/hue-api/3-schedules-api/
 
-API: /api/<username>/schedules
+API: /api/[username]/schedules
 
 Record:
 
